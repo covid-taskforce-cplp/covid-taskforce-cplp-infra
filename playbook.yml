@@ -1,0 +1,4 @@
+---
+# ansible-playbook -i hosts.yml playbook.yml
+
+- import_playbook: playbooks/ping-all.yml

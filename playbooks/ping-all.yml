@@ -1,0 +1,17 @@
+---
+# ansible-playbook playbooks/ping-all.yml -i inventories/cssg-prod/hosts.yml
+# ansible-playbook playbooks/ping-all.yml -i inventories/legado/hosts.yml -e="targets=all"
+
+## CDN Legado explicitamente nao tem all_nodes, sobreponha padrao
+# ansible-playbook -i inventories/cdns-legado/hosts.yml --vault-password-file .valt/pass main-ad-hocs.yml -e="targets=all_cdnlegado"
+
+- name: "test connection"
+  hosts: "{{ targets | default('all_nodes') }}"
+  remote_user: root
+  debugger: on_failed
+  vars:
+
+  tasks:
+    - name: "ping all"
+      ping:
+        data: pong
