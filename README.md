@@ -8,11 +8,15 @@ use:
 ### How to download this ansible-linux-ha-cluster to your machine
 
 ```bash
-git clone https://github.com/fititnt/ansible-linux-ha-cluster.git .
+git clone https://github.com//covid-taskforce-cplp/covid-taskforce-cplp-infra.git .
 
-# This will download https://github.com/fititnt/https://github.com/fititnt/ap-application-load-balancer
-# on roles/ap-application-load-balancer
 ansible-galaxy install -r requirements.yml --roles-path roles/
+```
+
+### How to run
+
+```bash
+ansible-playbook -i hosts.yml playbook.yml
 ```
 
 ## Requisites
