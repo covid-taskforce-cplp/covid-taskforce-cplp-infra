@@ -1,4 +1,6 @@
 ---
+# At this moment, the covid-taskforce-cplp-infra does not require external
+# Ansible Roles
 
-- src: fititnt.ap-application-load-balancer
-- src: fititnt.syntactic_sugar
+# - src: fititnt.ap-application-load-balancer
+# - src: fititnt.syntactic_sugar

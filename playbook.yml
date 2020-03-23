@@ -1,5 +1,5 @@
 ---
-# ansible-playbook -i hosts.yml playbook.yml
+# ansible-playbook -i inventories/oswaldo-prod/ playbook.yml
 
 - import_playbook: playbooks/ping-all.yml
 # - import_playbook: playbooks/infra-passwordless-wheel.yml

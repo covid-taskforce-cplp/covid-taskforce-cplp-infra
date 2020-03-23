@@ -1,5 +1,11 @@
 ---
-# ansible-playbook playbooks/ping-all.yml -i inventories/cssg-prod/hosts.yml
+# FILE:            playbooks/ping-all.yml
+# LICENSE:         Public Domain
+# DESCRIPTION:     Simple hello world to see if all it's working
+#
+# USAGE:
+#
+# ansible-playbook -i inventories/oswaldo-prod/ playbooks/ping-all.yml
 # ansible-playbook playbooks/ping-all.yml -i inventories/legado/hosts.yml -e="targets=all"
 
 ## CDN Legado explicitamente nao tem all_nodes, sobreponha padrao
