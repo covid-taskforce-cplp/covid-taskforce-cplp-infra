@@ -31,6 +31,11 @@ The non-Ansible resources are on the [logbooks folder](logbooks/).**
 ### covid-chagas.vps.etica.ai
 > Proxy server
 
+See [logbooks/squid-install-public-readme-v2.md](logbooks/squid-install-public-readme-v2.md).
+Initial work done in just the middle of a night by @joaogerardo on very early
+days of the @covid-taskforce-cplp to help someone outside brazil who could not
+access some brazilian IP adress.
+
 - **DNS**: covid-chagas.vps.etica.ai
 - **IP**: 191.252.103.250
 - **RAM**: 512MB
@@ -67,7 +72,7 @@ ansible-playbook -i inventories/oswaldo-homolog/ --vault-password-file .valt/pas
 ```
 
 ### About .valt/pass
-Please read [.valt/README.md](README.md)
+Please read [.valt/README.md](.valt/README.md).
 
 ## Requisites
 
